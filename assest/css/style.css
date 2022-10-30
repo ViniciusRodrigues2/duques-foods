@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --color-Text: white;
+    --padding-button: 10px 20px;
+    --color-second: #9d4043;
+    --padding-spacing: 1.25em;
+    --color-text-blue: #61d2e6;
+    --color-texte-yellow:#f6d427;
+    --color-text-purple: #ed92ae;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.236),rgba(75, 75, 75, 0.185)),url('../../imagem/fundoBG.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.container .navgatior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.4em;
+    position: relative;
+}
+.container .navgatior .logo{
+    padding-left: var(--padding-spacing);
+}
+.container .navgatior .logo a{
+    text-decoration: none;
+    font-size: 1.80em;
+    font-weight: 800;
+    color: #564f4f;
+}
+.container .navgatior .navMobile{
+    display: flex;
+    padding-right: var(--padding-spacing);
+    list-style: none;
+    position: absolute;
+    top: 3em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    gap: 5em;
+    padding: 10px 0;
+    background-color: #564f4f;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.container .navgatior .navMobile.viewMenu{
+    background-color: #564f4f;
+    opacity: 1;
+    height: calc(100vh - 4.5em);
+    overflow: auto;
+}
+.container .navgatior .navMobile li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 1.8em;
+    text-transform: capitalize;
+}
+.container .contentHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-top:1.25em ;
+    font-size: 2em;
+    color: var(--color-Text);
+    text-align: center;
+}
+.container .contentHeader h1{
+    padding: var(--padding-button);
+}
+.container .navgatior .menu-burguer{
+    padding-right: var(--padding-spacing);
+}
+.container .navgatior .menu-burguer i{
+   color: white;
+   font-size: 2em;
+   cursor: pointer;
+}
+
+.content{
+    background-color: white;
+}
+.content .container-action{
+    width: 100%;
+}
+.content .container-action .abouts-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.content .container-action .abouts-container .content-action{
+    order: 2;
+}
+.content .container-action .abouts-container img{
+    width: 100%;
+    order: 1;
+}
+.content .container-action .abouts-container h3{
+    font-size: 1.20em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: var(--color-text-blue);
+    margin: 1.3em 2em;
+}
+.content .container-action .abouts-container h3::before{
+    content: '';
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+    height: 2px;
+    margin: 0 8px;
+    background-color: var(--color-text-blue);
+}
+.content .container-action .abouts-container h2{
+    font-size: 3em;
+    margin: 0 .75em;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.content .container-action .abouts-container p{
+    font-size: 1.2em;
+    margin: .85em 1.5em;
+    text-transform: capitalize;
+}
+.content .container-action .abouts-container a{
+    display: flex;
+    padding: var(--padding-button);
+    color: #564f4f;
+    border: 3px solid var(--color-text-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    width: 8em;
+    font-weight: 800;
+    margin: .90em 1.4em;
+}
+
+
+
+
+
+
+.content .container-action .features-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.content .container-action .features-container .content-action{
+    order: 2;
+}
+.content .container-action .features-container img{
+    width: 100%;
+    order: 1;
+}
+.content .container-action .features-container h3{
+    font-size: 1.20em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: var(--color-texte-yellow);
+    margin: 1.3em 2em;
+}
+.content .container-action .features-container h3::before{
+    content: '';
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+    height: 2px;
+    margin: 0 8px;
+    background-color: var(--color-texte-yellow);
+}
+.content .container-action .features-container h2{
+    font-size: 3em;
+    margin: 0 .75em;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.content .container-action .features-container p{
+    font-size: 1.2em;
+    margin: .85em 1.5em;
+    text-transform: capitalize;
+}
+.content .container-action .features-container a{
+    display: flex;
+    padding: var(--padding-button);
+    color: #564f4f;
+    border: 3px solid var(--color-texte-yellow);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    width: 8em;
+    font-weight: 800;
+    margin: .90em 1.4em;
+}
+
+
+.content .container-action .desing-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.content .container-action .desing-container .content-action{
+    order: 2;
+}
+.content .container-action .desing-container img{
+    width: 100%;
+    order: 1;
+}
+.content .container-action .desing-container h3{
+    font-size: 1.20em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: var(--color-text-purple);
+    margin: 1.3em 2em;
+}
+.content .container-action .desing-container h3::before{
+    content: '';
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+    height: 2px;
+    margin: 0 8px;
+    background-color: var(--color-text-purple);
+}
+.content .container-action .desing-container h2{
+    font-size: 3em;
+    margin: 0 .75em;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.content .container-action .desing-container p{
+    font-size: 1.2em;
+    margin: .85em 1.5em;
+    text-transform: capitalize;
+}
+.content .container-action .desing-container a{
+    display: flex;
+    padding: var(--padding-button);
+    color: #564f4f;
+    border: 3px solid var(--color-text-purple);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    width: 8em;
+    font-weight: 800;
+    margin: .90em 1.4em;
+}

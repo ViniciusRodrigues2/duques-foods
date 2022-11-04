@@ -2,7 +2,11 @@
 
 @media screen and (min-width:760px){
     
-    
+    .container .contentHeader h1{
+        padding: var(--padding-button);
+        font-size: clamp(3.5em,4.5vw,4.8em);
+        font-weight: 900;
+    }
     .content .container-action .abouts-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -40,5 +44,14 @@
     }
     .content .container-action .desing-container img{
         height: 500px;
+    }
+    .content .container-action .desing-container h2{
+        font-size: 3.2em;
+    }
+    .content .container-action .features-container h2{
+        font-size: 3.2em;
+    }
+    .content .container-action .abouts-container h2{
+        font-size: 3.2em;
     }
 }

@@ -40,7 +40,7 @@ p{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.468),rgba(75, 75, 75, 0.308)),url('../../imagem/fundoBG.jpg');
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.632),rgba(42, 42, 42, 0.547)),url('../../imagem/foto-3.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -103,7 +103,7 @@ p{
 }
 .container .contentHeader h1{
     padding: var(--padding-button);
-    font-size: clamp(1.8em,2.5vw,4em);
+    font-size: clamp(1.8em,2.5vw,8em);
 }
 .container .navgatior .menu-burguer{
     padding-right: var(--padding-spacing);
@@ -157,6 +157,7 @@ p{
 .content .container-action .abouts-container p{
     font-size: 1.1em;
     text-transform: capitalize;
+    padding: .85em 0;
 }
 .content .container-action .abouts-container .btn{
     margin: 2em 0;
@@ -215,6 +216,7 @@ p{
 .content .container-action .features-container p{
     font-size: 1.2em;
     text-transform: capitalize;
+    padding: .85em 0;
 }
 .content .container-action .features-container .btn{
     margin: 2em 0;
@@ -245,7 +247,6 @@ p{
     order: 1;
 }
 .content .container-action .desing-container h3{
-    font-size: clamp(1.8em,2.5vw,2.8em);
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -270,6 +271,7 @@ p{
     font-size: 1.2em;
     margin: .85em 0;
     text-transform: capitalize;
+    padding: .85em 0;
 }
 .content .container-action .desing-container .btn{
     margin: 2em 0;

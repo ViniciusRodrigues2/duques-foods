@@ -15,6 +15,16 @@
         grid-template-columns: repeat(2,1fr);
         height: 500px;
     }
+    .content .container-action .abouts-container .content-action h3{
+        font-size: 1.20em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        color: var(--color-text-blue);
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+    }
     .content .container-action .abouts-container .content-action{
         margin-top: 40px;
     }
@@ -23,6 +33,17 @@
         height: 500px;
         object-fit: cover;
     }
+
+    .content .container-action .features-container .content-action{
+        order: 1;
+        margin-left: 2em;
+    }
+    .content .container-action .features-container img{
+        width: 100%;
+        order: 2;
+    }
+
+
     .content .container-action .features-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
